@@ -1,5 +1,5 @@
-import type { Router } from 'vue-router'
 import { canNavigate } from '@layouts/plugins/casl'
+import type { Router } from 'vue-router'
 
 export const setupGuards = (router: Router) => {
   // 👉 router.beforeEach
@@ -35,7 +35,7 @@ export const setupGuards = (router: Router) => {
       return isLoggedIn
         ? { name: 'not-authorized' }
         : {
-            name: 'login',
+            name: 'admin-login',
             query: {
               ...to.query,
               to: to.fullPath !== '/' ? to.path : undefined,
