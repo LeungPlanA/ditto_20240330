@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Footer from '@/views/front-pages/front-page-footer.vue'
-import Navbar from '@/views/front-pages/front-page-navbar.vue'
-import laptopGirl from '@images/illustrations/laptop-girl.png'
+import Footer from '@/views/front-pages/front-page-footer.vue';
+import Navbar from '@/views/front-pages/front-page-navbar.vue';
+import laptopGirl from '@images/illustrations/laptop-girl.png';
 
 definePage({
   meta: {
@@ -138,7 +138,7 @@ const faqs = [
               <p class="text-body-1 mb-11">
                 You will get full access to all the features for 14 days.
               </p>
-              <VBtn :to="{ name: 'front-pages-payment' }">
+              <VBtn :to="{ name: 'admin-front-pages-payment' }">
                 Start 14-day FREE trial
               </VBtn>
             </div>
@@ -294,20 +294,20 @@ const faqs = [
                 <td class="text-center py-2">
                   <VBtn
                     variant="tonal"
-                    :to="{ name: 'front-pages-payment' }"
+                    :to="{ name: 'admin-front-pages-payment' }"
                   >
                     Choose Plan
                   </VBtn>
                 </td>
                 <td class="text-center py-2">
-                  <VBtn :to="{ name: 'front-pages-payment' }">
+                  <VBtn :to="{ name: 'admin-front-pages-payment' }">
                     Choose Plan
                   </VBtn>
                 </td>
                 <td class="text-center py-2">
                   <VBtn
                     variant="tonal"
-                    :to="{ name: 'front-pages-payment' }"
+                    :to="{ name: 'admin-front-pages-payment' }"
                   >
                     Choose Plan
                   </VBtn>

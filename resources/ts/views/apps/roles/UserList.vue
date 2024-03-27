@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import AddNewUserDrawer from '@/views/apps/user/list/AddNewUserDrawer.vue'
-import type { UserProperties } from '@db/apps/users/types'
+import AddNewUserDrawer from '@/views/apps/user/list/AddNewUserDrawer.vue';
+import type { UserProperties } from '@db/apps/users/types';
 
 // 👉 Store
 const searchQuery = ref('')
@@ -190,7 +190,7 @@ const deleteUser = async (id: number) => {
             <div class="d-flex flex-column">
               <h6 class="text-base">
                 <RouterLink
-                  :to="{ name: 'apps-user-view-id', params: { id: item.id } }"
+                  :to="{ name: 'admin-apps-user-view-id', params: { id: item.id } }"
                   class="font-weight-medium text-link"
                 >
                   {{ item.fullName }}
@@ -255,7 +255,7 @@ const deleteUser = async (id: number) => {
             <VIcon icon="tabler-dots-vertical" />
             <VMenu activator="parent">
               <VList>
-                <VListItem :to="{ name: 'apps-user-view-id', params: { id: item.id } }">
+                <VListItem :to="{ name: 'admin-apps-user-view-id', params: { id: item.id } }">
                   <template #prepend>
                     <VIcon icon="tabler-eye" />
                   </template>

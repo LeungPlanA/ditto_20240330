@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import InvoiceAddPaymentDrawer from '@/views/apps/invoice/InvoiceAddPaymentDrawer.vue'
-import InvoiceEditable from '@/views/apps/invoice/InvoiceEditable.vue'
-import InvoiceSendInvoiceDrawer from '@/views/apps/invoice/InvoiceSendInvoiceDrawer.vue'
+import InvoiceAddPaymentDrawer from '@/views/apps/invoice/InvoiceAddPaymentDrawer.vue';
+import InvoiceEditable from '@/views/apps/invoice/InvoiceEditable.vue';
+import InvoiceSendInvoiceDrawer from '@/views/apps/invoice/InvoiceSendInvoiceDrawer.vue';
 
 // Type: Invoice data
-import type { InvoiceData, PurchasedProduct } from '@/views/apps/invoice/types'
+import type { InvoiceData, PurchasedProduct } from '@/views/apps/invoice/types';
 
 const invoiceData = ref<InvoiceData>()
-const route = useRoute('apps-invoice-edit-id')
+const route = useRoute('admin-apps-invoice-edit-id')
 
 // 👉 fetchInvoice
 
@@ -94,7 +94,7 @@ const paymentMethods = ['Bank Account', 'PayPal', 'UPI Transfer']
               color="secondary"
               variant="tonal"
               class="flex-grow-1"
-              :to="{ name: 'apps-invoice-preview-id', params: { id: route.params.id } }"
+              :to="{ name: 'admin-apps-invoice-preview-id', params: { id: route.params.id } }"
             >
               Preview
             </VBtn>

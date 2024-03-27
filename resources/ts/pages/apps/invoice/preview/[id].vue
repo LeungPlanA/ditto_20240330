@@ -7,7 +7,7 @@ import { themeConfig } from '@themeConfig'
 import InvoiceAddPaymentDrawer from '@/views/apps/invoice/InvoiceAddPaymentDrawer.vue'
 import InvoiceSendInvoiceDrawer from '@/views/apps/invoice/InvoiceSendInvoiceDrawer.vue'
 
-const route = useRoute('apps-invoice-preview-id')
+const route = useRoute('admin-apps-invoice-preview-id')
 
 const isAddPaymentSidebarVisible = ref(false)
 const isSendPaymentSidebarVisible = ref(false)
@@ -364,7 +364,7 @@ const printInvoice = () => {
                 color="secondary"
                 variant="tonal"
                 class="mb-4 flex-grow-1"
-                :to="{ name: 'apps-invoice-edit-id', params: { id: route.params.id } }"
+                :to="{ name: 'admin-apps-invoice-edit-id', params: { id: route.params.id } }"
               >
                 Edit
               </VBtn>

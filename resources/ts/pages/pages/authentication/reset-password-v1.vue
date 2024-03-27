@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import authV1BottomShape from '@images/svg/auth-v1-bottom-shape.svg?raw'
-import authV1TopShape from '@images/svg/auth-v1-top-shape.svg?raw'
-import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
-import { themeConfig } from '@themeConfig'
+import authV1BottomShape from '@images/svg/auth-v1-bottom-shape.svg?raw';
+import authV1TopShape from '@images/svg/auth-v1-top-shape.svg?raw';
+import { VNodeRenderer } from '@layouts/components/VNodeRenderer';
+import { themeConfig } from '@themeConfig';
 
 definePage({
   meta: {
@@ -102,7 +102,7 @@ const isConfirmPasswordVisible = ref(false)
               <VCol cols="12">
                 <RouterLink
                   class="d-flex align-center justify-center"
-                  :to="{ name: 'pages-authentication-login-v1' }"
+                  :to="{ name: 'admin-pages-authentication-login-v1' }"
                 >
                   <VIcon
                     icon="tabler-chevron-left"

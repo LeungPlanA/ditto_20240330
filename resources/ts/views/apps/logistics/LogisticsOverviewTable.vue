@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Vehicle } from '@db/apps/logistics/types'
+import type { Vehicle } from '@db/apps/logistics/types';
 
 const itemsPerPage = ref(5)
 const page = ref(1)
@@ -84,7 +84,7 @@ const resolveChipColor = (warning: string) => {
             size="28"
           />
         </VAvatar>
-        <RouterLink :to="{ name: 'apps-logistics-fleet' }">
+        <RouterLink :to="{ name: 'admin-apps-logistics-fleet' }">
           <div class="text-link text-base font-weight-medium d-inline-block">
             VOL-{{ item.location }}
           </div>

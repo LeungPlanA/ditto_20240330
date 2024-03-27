@@ -5,27 +5,27 @@ export default [
     children: [
       {
         title: 'Analytics',
-        to: 'dashboards-analytics',
+        to: 'admin-dashboards-analytics',
         icon: { icon: 'tabler-chart-pie-2' },
       },
       {
         title: 'CRM',
-        to: 'dashboards-crm',
+        to: 'admin-dashboards-crm',
         icon: { icon: 'tabler-cube' },
       },
       {
         title: 'Ecommerce',
-        to: 'dashboards-ecommerce',
+        to: 'admin-dashboards-ecommerce',
         icon: { icon: 'tabler-shopping-cart' },
       },
       {
         title: 'Academy',
-        to: 'dashboards-academy',
+        to: 'admin-apps-academy-dashboard',
         icon: { icon: 'tabler-book' },
       },
       {
         title: 'Logistics',
-        to: 'dashboards-logistics',
+        to: 'admin-apps-logistics-dashboard',
         icon: { icon: 'tabler-truck' },
       },
     ],

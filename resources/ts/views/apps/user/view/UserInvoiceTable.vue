@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Invoice } from '@db/apps/invoice/types'
+import type { Invoice } from '@db/apps/invoice/types';
 
 const searchQuery = ref('')
 const selectedStatus = ref()
@@ -67,7 +67,7 @@ const computedMoreList = computed(() => {
       title: 'Edit',
       value: 'edit',
       prependIcon: 'tabler-pencil',
-      to: { name: 'apps-invoice-edit-id', params: { id: paramId } },
+      to: { name: 'admin-apps-invoice-edit-id', params: { id: paramId } },
     },
     { title: 'Duplicate', value: 'duplicate', prependIcon: 'tabler-layers-intersect' },
   ])
@@ -132,7 +132,7 @@ const deleteInvoice = async (id: number) => {
       >
         <!-- id -->
         <template #item.id="{ item }">
-          <RouterLink :to="{ name: 'apps-invoice-preview-id', params: { id: item.id } }">
+          <RouterLink :to="{ name: 'admin-apps-invoice-preview-id', params: { id: item.id } }">
             #{{ item.id }}
           </RouterLink>
         </template>
@@ -181,7 +181,7 @@ const deleteInvoice = async (id: number) => {
             <VIcon icon="tabler-trash" />
           </IconBtn>
 
-          <IconBtn :to="{ name: 'apps-invoice-preview-id', params: { id: item.id } }">
+          <IconBtn :to="{ name: 'admin-apps-invoice-preview-id', params: { id: item.id } }">
             <VIcon icon="tabler-eye" />
           </IconBtn>
 

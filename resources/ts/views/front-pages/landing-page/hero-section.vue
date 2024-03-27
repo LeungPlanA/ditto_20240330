@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useMouse } from '@vueuse/core'
-import { useTheme } from 'vuetify'
 import { useGenerateImageVariant } from '@/@core/composable/useGenerateImageVariant'
 import joinArrow from '@images/front-pages/icons/Join-community-arrow.png'
 import heroDashboardImgDark from '@images/front-pages/landing-page/hero-dashboard-dark.png'
 import heroDashboardImgLight from '@images/front-pages/landing-page/hero-dashboard-light.png'
+import { useMouse } from '@vueuse/core'
+import { useTheme } from 'vuetify'
 
 import heroElementsImgDark from '@images/front-pages/landing-page/hero-elements-dark.png'
 import heroElementsImgLight from '@images/front-pages/landing-page/hero-elements-light.png'
@@ -57,7 +57,7 @@ const translateMouse = computed(() => {
 
               <VBtn
                 :size="$vuetify.display.smAndUp ? 'large' : 'default' "
-                :to="{ name: 'front-pages-landing-page', hash: `#pricing-plan` }"
+                :to="{ name: 'admin-front-pages-landing-page', hash: `#pricing-plan` }"
                 :active="false"
               >
                 Get early Access
@@ -73,7 +73,7 @@ const translateMouse = computed(() => {
         <div class="blank-section" />
         <div class="hero-animation-img position-absolute">
           <RouterLink
-            :to="{ name: 'dashboards-analytics' }"
+            :to="{ name: 'admin-dashboards-analytics' }"
             target="_blank"
           >
             <div

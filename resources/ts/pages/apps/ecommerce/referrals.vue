@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { Referrals } from '@db/apps/ecommerce/types'
-import paperImg from '@images/svg/paper-send.svg?raw'
-import rocketImg from '@images/svg/rocket.svg?raw'
-import userInfoImg from '@images/svg/user-info.svg?raw'
+import type { Referrals } from '@db/apps/ecommerce/types';
+import paperImg from '@images/svg/paper-send.svg?raw';
+import rocketImg from '@images/svg/rocket.svg?raw';
+import userInfoImg from '@images/svg/user-info.svg?raw';
 
 const rocketIcon = h('div', { innerHTML: rocketImg, style: 'font-size: 2.625rem;color: rgb(var(--v-theme-primary))' })
 const userInfoIcon = h('div', { innerHTML: paperImg, style: 'font-size: 2.625rem;color: rgb(var(--v-theme-primary))' })
@@ -265,7 +265,7 @@ const resolveStatus = (status: string) => {
                 <div>
                   <div class="font-weight-medium text-high-emphasis">
                     <RouterLink
-                      :to="{ name: 'apps-ecommerce-customer-details-id', params: { id: 478426 } }"
+                      :to="{ name: 'admin-apps-ecommerce-customer-details-id', params: { id: 478426 } }"
                       class="text-link"
                     >
                       {{ item.user }}

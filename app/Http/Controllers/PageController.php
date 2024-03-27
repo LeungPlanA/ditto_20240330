@@ -6,6 +6,7 @@ use App\Models\Page;
 use App\Traits\ChildTrait;
 use Illuminate\Support\Facades\DB;
 use App\Models\Menu;
+use App\Models\Template;
 
 class PageController extends Controller
 {
@@ -30,6 +31,9 @@ class PageController extends Controller
 
         $menus = Menu::get();
         $page->menus = $menus;
+
+        $template = new Template();
+        $page->templates = $template->getTemplatesWithTranslations();
 
         foreach ($menus as $menu) {
             $menuItems = $this->getMenuChild($menu->id, NULL);

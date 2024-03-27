@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { ConnectionsTab } from '@db/pages/profile/types'
+import type { ConnectionsTab } from '@db/pages/profile/types';
 
-const router = useRoute('pages-user-profile-tab')
+const router = useRoute('admin-pages-user-profile-tab')
 const connectionData = ref<ConnectionsTab[]>([])
 
 const fetchProjectData = async () => {

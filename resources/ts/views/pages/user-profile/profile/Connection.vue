@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ProfileConnections } from '@db/pages/profile/types'
+import type { ProfileConnections } from '@db/pages/profile/types';
 
 interface Props {
   connectionsData: ProfileConnections[]
@@ -57,7 +57,7 @@ const moreList = [
 
         <VListItem>
           <VListItemTitle class="pt-2 text-center">
-            <RouterLink :to="{ name: 'pages-user-profile-tab', params: { tab: 'connections' } }">
+            <RouterLink :to="{ name: 'admin-pages-user-profile-tab', params: { tab: 'connections' } }">
               <p class="mb-0">
                 View all connections
               </p>

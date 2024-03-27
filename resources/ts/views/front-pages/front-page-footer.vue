@@ -17,11 +17,11 @@ interface Menu {
 const footerBg = useGenerateImageVariant(footerLightBg, footerDarkBg)
 
 const pagesList: Menu[] = [
-  { name: 'Pricing', to: { name: 'front-pages-pricing' } },
-  { name: 'Payment', to: { name: 'front-pages-payment' }, isNew: true },
-  { name: 'Checkout', to: { name: 'front-pages-checkout' } },
-  { name: 'Help Center', to: { name: 'front-pages-help-center' } },
-  { name: 'Login/Register', to: { name: 'pages-authentication-login-v2' } },
+  { name: 'Pricing', to: { name: 'admin-front-pages-pricing' } },
+  { name: 'Payment', to: { name: 'admin-front-pages-payment' }, isNew: true },
+  { name: 'Checkout', to: { name: 'admin-front-pages-checkout' } },
+  { name: 'Help Center', to: { name: 'admin-front-pages-help-center' } },
+  { name: 'Login/Register', to: { name: 'admin-pages-authentication-login-v2' } },
 ]
 
 const demoList = [

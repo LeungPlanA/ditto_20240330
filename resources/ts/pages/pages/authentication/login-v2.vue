@@ -124,7 +124,7 @@ const authThemeMask = useGenerateImageVariant(authV2MaskLight, authV2MaskDark)
                   />
                   <RouterLink
                     class="text-primary"
-                    :to="{ name: 'pages-authentication-forgot-password-v2' }"
+                    :to="{ name: 'admin-pages-authentication-forgot-password-v2' }"
                   >
                     Forgot Password?
                   </RouterLink>
@@ -148,7 +148,7 @@ const authThemeMask = useGenerateImageVariant(authV2MaskLight, authV2MaskDark)
                 </span>
                 <RouterLink
                   class="text-primary ms-1 d-inline-block text-body-1"
-                  :to="{ name: 'pages-authentication-register-v2' }"
+                  :to="{ name: 'admin-pages-authentication-register-v2' }"
                 >
                   Create an account
                 </RouterLink>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import paperPlane from '@images/front-pages/icons/paper-airplane.png'
-import plane from '@images/front-pages/icons/plane.png'
-import pricingPlanArrow from '@images/front-pages/icons/pricing-plans-arrow.png'
-import shuttleRocket from '@images/front-pages/icons/shuttle-rocket.png'
+import paperPlane from '@images/front-pages/icons/paper-airplane.png';
+import plane from '@images/front-pages/icons/plane.png';
+import pricingPlanArrow from '@images/front-pages/icons/pricing-plans-arrow.png';
+import shuttleRocket from '@images/front-pages/icons/shuttle-rocket.png';
 
 const annualMonthlyPlanPriceToggler = ref(true)
 
@@ -190,7 +190,7 @@ const pricingPlans = [
                   block
                   :variant="plan.current ? 'elevated' : 'tonal'"
                   class="mt-8"
-                  :to="{ name: 'front-pages-payment' }"
+                  :to="{ name: 'admin-front-pages-payment' }"
                 >
                   Get Started
                 </VBtn>

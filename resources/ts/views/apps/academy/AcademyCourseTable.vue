@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Course } from '@db/apps/academy/types'
+import type { Course } from '@db/apps/academy/types';
 
 const searchQuery = ref('')
 
@@ -89,7 +89,7 @@ const totalCourse = computed(() => courseData.value.total)
           <div>
             <div class="text-base font-weight-medium mb-1">
               <RouterLink
-                :to="{ name: 'apps-academy-course-details' }"
+                :to="{ name: 'admin-apps-academy-course-details' }"
                 class="text-link d-inline-block"
               >
                 {{ item.courseTitle }}

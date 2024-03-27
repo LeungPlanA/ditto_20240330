@@ -9,41 +9,41 @@ export default [
         children: [
           {
             title: 'Dashboard',
-            to: 'apps-ecommerce-dashboard',
+            to: 'admin-dashboards-ecommerce',
           },
           {
             title: 'Product',
             children: [
-              { title: 'List', to: 'apps-ecommerce-product-list' },
-              { title: 'Add', to: 'apps-ecommerce-product-add' },
-              { title: 'Category', to: 'apps-ecommerce-product-category-list' },
+              { title: 'List', to: 'admin-apps-ecommerce-product-list' },
+              { title: 'Add', to: 'admin-apps-ecommerce-product-add' },
+              { title: 'Category', to: 'admin-apps-ecommerce-product-category-list' },
             ],
           },
           {
             title: 'Order',
             children: [
-              { title: 'List', to: 'apps-ecommerce-order-list' },
-              { title: 'Details', to: { name: 'apps-ecommerce-order-details-id', params: { id: '9042' } } },
+              { title: 'List', to: 'admin-apps-ecommerce-order-list' },
+              { title: 'Details', to: { name: 'admin-apps-ecommerce-order-details-id', params: { id: '9042' } } },
             ],
           },
           {
             title: 'Customer',
             children: [
-              { title: 'List', to: 'apps-ecommerce-customer-list' },
-              { title: 'Details', to: { name: 'apps-ecommerce-customer-details-id', params: { id: 478426 } } },
+              { title: 'List', to: 'admin-apps-ecommerce-customer-list' },
+              { title: 'Details', to: { name: 'admin-apps-ecommerce-customer-details-id', params: { id: 478426 } } },
             ],
           },
           {
             title: 'Manage Review',
-            to: 'apps-ecommerce-manage-review',
+            to: 'admin-apps-ecommerce-manage-review',
           },
           {
             title: 'Referrals',
-            to: 'apps-ecommerce-referrals',
+            to: 'admin-apps-ecommerce-referrals',
           },
           {
             title: 'Settings',
-            to: 'apps-ecommerce-settings',
+            to: 'admin-apps-ecommerce-settings',
           },
         ],
       },
@@ -51,58 +51,58 @@ export default [
         title: 'Academy',
         icon: { icon: 'tabler-book' },
         children: [
-          { title: 'Dashboard', to: 'apps-academy-dashboard' },
-          { title: 'My Course', to: 'apps-academy-my-course' },
-          { title: 'Course Details', to: 'apps-academy-course-details' },
+          { title: 'Dashboard', to: 'admin-apps-academy-dashboard' },
+          { title: 'My Course', to: 'admin-apps-academy-my-course' },
+          { title: 'Course Details', to: 'admin-apps-academy-course-details' },
         ],
       },
       {
         title: 'Logistics',
         icon: { icon: 'tabler-truck' },
         children: [
-          { title: 'Dashboard', to: 'apps-logistics-dashboard' },
-          { title: 'Fleet', to: 'apps-logistics-fleet' },
+          { title: 'Dashboard', to: 'admin-apps-logistics-dashboard' },
+          { title: 'Fleet', to: 'admin-apps-logistics-fleet' },
         ],
       },
       {
         title: 'Email',
         icon: { icon: 'tabler-mail' },
-        to: 'apps-email',
+        to: 'admin-apps-email',
       },
       {
         title: 'Chat',
         icon: { icon: 'tabler-message-circle' },
-        to: 'apps-chat',
+        to: 'admin-apps-chat',
       },
       {
         title: 'Calendar',
-        to: 'apps-calendar',
+        to: 'admin-apps-calendar',
         icon: { icon: 'tabler-calendar' },
       },
       {
         title: 'Invoice',
         icon: { icon: 'tabler-file-dollar' },
         children: [
-          { title: 'List', to: 'apps-invoice-list' },
-          { title: 'Preview', to: { name: 'apps-invoice-preview-id', params: { id: '5036' } } },
-          { title: 'Edit', to: { name: 'apps-invoice-edit-id', params: { id: '5036' } } },
-          { title: 'Add', to: 'apps-invoice-add' },
+          { title: 'List', to: 'admin-apps-invoice-list' },
+          { title: 'Preview', to: { name: 'admin-apps-invoice-preview-id', params: { id: '5036' } } },
+          { title: 'Edit', to: { name: 'admin-apps-invoice-edit-id', params: { id: '5036' } } },
+          { title: 'Add', to: 'admin-apps-invoice-add' },
         ],
       },
       {
         title: 'User',
         icon: { icon: 'tabler-users' },
         children: [
-          { title: 'List', to: 'apps-user-list' },
-          { title: 'View', to: { name: 'apps-user-view-id', params: { id: 21 } } },
+          { title: 'List', to: 'admin-apps-user-list' },
+          { title: 'View', to: { name: 'admin-apps-user-view-id', params: { id: 21 } } },
         ],
       },
       {
         title: 'Roles & Permissions',
         icon: { icon: 'tabler-settings' },
         children: [
-          { title: 'Roles', to: 'apps-roles' },
-          { title: 'Permissions', to: 'apps-permissions' },
+          { title: 'Roles', to: 'admin-apps-roles' },
+          { title: 'Permissions', to: 'admin-apps-permissions' },
         ],
       },
     ],

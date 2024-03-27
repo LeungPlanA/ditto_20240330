@@ -5,7 +5,7 @@ import product22 from '@images/ecommerce-images/product-22.png'
 import product23 from '@images/ecommerce-images/product-23.png'
 import product24 from '@images/ecommerce-images/product-24.png'
 
-const route = useRoute('apps-ecommerce-order-details-id')
+const route = useRoute('admin-apps-ecommerce-order-details-id')
 const isConfirmDialogVisible = ref(false)
 const isUserInfoEditDialogVisible = ref(false)
 const isEditAddressDialogVisible = ref(false)

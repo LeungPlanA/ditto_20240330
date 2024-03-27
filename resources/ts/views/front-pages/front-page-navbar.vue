@@ -2,8 +2,8 @@
 import type { RouteLocationRaw } from 'vue-router/auto'
 import { useDisplay } from 'vuetify'
 
-import { useWindowScroll } from '@vueuse/core'
 import navImg from '@images/front-pages/misc/nav-item-col-img.png'
+import { useWindowScroll } from '@vueuse/core'
 
 import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue'
 import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
@@ -44,38 +44,38 @@ const menuItems: MenuItem[] = [
     listTitle: 'Page',
     listIcon: 'tabler-layout-grid',
     navItems: [
-      { name: 'Pricing', to: { name: 'front-pages-pricing' } },
-      { name: 'Payment', to: { name: 'front-pages-payment' } },
-      { name: 'Checkout', to: { name: 'front-pages-checkout' } },
-      { name: 'Help Center', to: { name: 'front-pages-help-center' } },
+      { name: 'Pricing', to: { name: 'admin-front-pages-pricing' } },
+      { name: 'Payment', to: { name: 'admin-front-pages-payment' } },
+      { name: 'Checkout', to: { name: 'admin-front-pages-checkout' } },
+      { name: 'Help Center', to: { name: 'admin-front-pages-help-center' } },
     ],
   },
   {
     listTitle: 'Auth Demo',
     listIcon: 'tabler-lock-open',
     navItems: [
-      { name: 'Login (Basic)', to: { name: 'pages-authentication-login-v1' } },
-      { name: 'Login (Cover)', to: { name: 'pages-authentication-login-v2' } },
-      { name: 'Register (Basic)', to: { name: 'pages-authentication-register-v1' } },
-      { name: 'Register (Cover)', to: { name: 'pages-authentication-register-v2' } },
-      { name: 'Register (Multi-steps)', to: { name: 'pages-authentication-register-multi-steps' } },
-      { name: 'Forgot Password (Basic)', to: { name: 'pages-authentication-forgot-password-v1' } },
-      { name: 'Forgot Password (Cover)', to: { name: 'pages-authentication-forgot-password-v2' } },
-      { name: 'Reset Password (Basic)', to: { name: 'pages-authentication-reset-password-v1' } },
-      { name: 'Reset Password (cover  )', to: { name: 'pages-authentication-reset-password-v2' } },
+      { name: 'Login (Basic)', to: { name: 'admin-pages-authentication-login-v1' } },
+      { name: 'Login (Cover)', to: { name: 'admin-pages-authentication-login-v2' } },
+      { name: 'Register (Basic)', to: { name: 'admin-pages-authentication-register-v1' } },
+      { name: 'Register (Cover)', to: { name: 'admin-pages-authentication-register-v2' } },
+      { name: 'Register (Multi-steps)', to: { name: 'admin-pages-authentication-register-multi-steps' } },
+      { name: 'Forgot Password (Basic)', to: { name: 'admin-pages-authentication-forgot-password-v1' } },
+      { name: 'Forgot Password (Cover)', to: { name: 'admin-pages-authentication-forgot-password-v2' } },
+      { name: 'Reset Password (Basic)', to: { name: 'admin-pages-authentication-reset-password-v1' } },
+      { name: 'Reset Password (cover  )', to: { name: 'admin-pages-authentication-reset-password-v2' } },
     ],
   },
   {
     listTitle: 'Other',
     listIcon: 'tabler-photo',
     navItems: [
-      { name: 'Under Maintenance', to: { name: 'pages-misc-under-maintenance' } },
-      { name: 'Coming Soon', to: { name: 'pages-misc-coming-soon' } },
+      { name: 'Under Maintenance', to: { name: 'admin-pages-misc-under-maintenance' } },
+      { name: 'Coming Soon', to: { name: 'admin-pages-misc-coming-soon' } },
       { name: 'Not Authorized', to: { path: '/not-authorized' } },
-      { name: 'Verify Email (Basic)', to: { name: 'pages-authentication-verify-email-v1' } },
-      { name: 'Verify Email (Cover)', to: { name: 'pages-authentication-verify-email-v2' } },
-      { name: 'Two Steps (Basic)', to: { name: 'pages-authentication-two-steps-v1' } },
-      { name: 'Two Steps (Cover)', to: { name: 'pages-authentication-two-steps-v2' } },
+      { name: 'Verify Email (Basic)', to: { name: 'admin-pages-authentication-verify-email-v1' } },
+      { name: 'Verify Email (Cover)', to: { name: 'admin-pages-authentication-verify-email-v2' } },
+      { name: 'Two Steps (Basic)', to: { name: 'admin-pages-authentication-two-steps-v1' } },
+      { name: 'Two Steps (Cover)', to: { name: 'admin-pages-authentication-two-steps-v2' } },
     ],
   },
 ]
@@ -103,7 +103,7 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
         <RouterLink
           v-for="(item, index) in ['Home', 'Features', 'Team', 'FAQ', 'Contact us']"
           :key="index"
-          :to="{ name: 'front-pages-landing-page', hash: `#${item.toLowerCase().replace(' ', '-')}` }"
+          :to="{ name: 'admin-front-pages-landing-page', hash: `#${item.toLowerCase().replace(' ', '-')}` }"
           class="nav-link font-weight-medium"
           :class="[props.activeId?.toLocaleLowerCase().replace('-', ' ') === item.toLocaleLowerCase() ? 'active-link' : '']"
         >
@@ -226,7 +226,7 @@ const isPageActive = computed(() => menuItems.some(item => item.navItems.some(li
             <RouterLink
               v-for="(item, index) in ['Home', 'Features', 'Team', 'FAQ', 'Contact us']"
               :key="index"
-              :to="{ name: 'front-pages-landing-page', hash: `#${item.toLowerCase().replace(' ', '-')}` }"
+              :to="{ name: 'admin-front-pages-landing-page', hash: `#${item.toLowerCase().replace(' ', '-')}` }"
               class="nav-link font-weight-medium py-2 px-2 px-lg-4"
               :class="[props.activeId?.toLocaleLowerCase().replace('-', ' ') === item.toLocaleLowerCase() ? 'active-link' : '']"
             >

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import safeBoxWithGoldenCoin from '@images/misc/3d-safe-box-with-golden-dollar-coins.png'
-import spaceRocket from '@images/misc/3d-space-rocket-with-smoke.png'
-import dollarCoinPiggyBank from '@images/misc/dollar-coins-flying-pink-piggy-bank.png'
+import safeBoxWithGoldenCoin from '@images/misc/3d-safe-box-with-golden-dollar-coins.png';
+import spaceRocket from '@images/misc/3d-space-rocket-with-smoke.png';
+import dollarCoinPiggyBank from '@images/misc/dollar-coins-flying-pink-piggy-bank.png';
 
 interface Pricing {
   title?: string
@@ -217,7 +217,7 @@ const pricingPlans = [
             block
             :color="plan.current ? 'success' : 'primary'"
             :variant="plan.isPopular ? 'elevated' : 'tonal'"
-            :to="{ name: 'front-pages-payment' }"
+            :to="{ name: 'admin-front-pages-payment' }"
             :active="false"
           >
             {{ plan.yearlyPrice === 0 ? 'Your Current Plan' : 'Upgrade' }}

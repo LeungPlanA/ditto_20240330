@@ -189,7 +189,7 @@ const deleteOrder = async (id: number) => {
       >
         <!-- Order ID -->
         <template #item.order="{ item }">
-          <RouterLink :to="{ name: 'apps-ecommerce-order-details-id', params: { id: item.order } }">
+          <RouterLink :to="{ name: 'admin-apps-ecommerce-order-details-id', params: { id: item.order } }">
             #{{ item.order }}
           </RouterLink>
         </template>
@@ -221,7 +221,7 @@ const deleteOrder = async (id: number) => {
             <div class="d-flex flex-column">
               <div class="text-body-1 font-weight-medium">
                 <RouterLink
-                  :to="{ name: 'pages-user-profile-tab', params: { tab: 'profile' } }"
+                  :to="{ name: 'admin-pages-user-profile-tab', params: { tab: 'profile' } }"
                   class="text-link"
                 >
                   {{ item.customer }}
@@ -280,7 +280,7 @@ const deleteOrder = async (id: number) => {
               <VList>
                 <VListItem
                   value="view"
-                  :to="{ name: 'apps-ecommerce-order-details-id', params: { id: item.order } }"
+                  :to="{ name: 'admin-apps-ecommerce-order-details-id', params: { id: item.order } }"
                 >
                   View
                 </VListItem>

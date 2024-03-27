@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Review } from '@db/apps/ecommerce/types'
+import type { Review } from '@db/apps/ecommerce/types';
 
 const selectedStatus = ref('All')
 const searchQuery = ref('')
@@ -454,7 +454,7 @@ const reviewStatChartConfig = {
               />
               <div class="d-flex flex-column">
                 <RouterLink
-                  :to="{ name: 'apps-ecommerce-customer-details-id', params: { id: 478426 } }"
+                  :to="{ name: 'admin-apps-ecommerce-customer-details-id', params: { id: 478426 } }"
                   class="font-weight-medium"
                   style="line-height: 1.375rem;"
                 >
@@ -505,7 +505,7 @@ const reviewStatChartConfig = {
                 <VList>
                   <VListItem
                     value="view"
-                    :to="{ name: 'apps-ecommerce-order-details-id', params: { id: item.id } }"
+                    :to="{ name: 'admin-apps-ecommerce-order-details-id', params: { id: item.id } }"
                   >
                     View
                   </VListItem>

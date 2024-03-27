@@ -1,9 +1,9 @@
 <script setup lang="ts">
+import { useConfigStore } from '@core/stores/config'
+import type { SearchResults } from '@db/app-bar-search/types'
 import Shepherd from 'shepherd.js'
 import { withQuery } from 'ufo'
 import type { RouteLocationRaw } from 'vue-router'
-import type { SearchResults } from '@db/app-bar-search/types'
-import { useConfigStore } from '@core/stores/config'
 
 interface Suggestion {
   icon: string
@@ -32,37 +32,37 @@ const suggestionGroups: SuggestionGroup[] = [
   {
     title: 'Popular Searches',
     content: [
-      { icon: 'tabler-chart-bar', title: 'Analytics', url: { name: 'dashboards-analytics' } },
-      { icon: 'tabler-chart-donut-3', title: 'CRM', url: { name: 'dashboards-crm' } },
-      { icon: 'tabler-shopping-cart', title: 'eCommerce', url: { name: 'dashboards-ecommerce' } },
-      { icon: 'tabler-truck', title: 'Logistics', url: { name: 'dashboards-logistics' } },
+      { icon: 'tabler-chart-bar', title: 'Analytics', url: { name: 'admin-dashboards-analytics' } },
+      { icon: 'tabler-chart-donut-3', title: 'CRM', url: { name: 'admin-dashboards-crm' } },
+      { icon: 'tabler-shopping-cart', title: 'eCommerce', url: { name: 'admin-dashboards-ecommerce' } },
+      { icon: 'tabler-truck', title: 'Logistics', url: { name: 'admin-dashboards-logistics' } },
     ],
   },
   {
     title: 'Apps & Pages',
     content: [
-      { icon: 'tabler-calendar', title: 'Calendar', url: { name: 'apps-calendar' } },
-      { icon: 'tabler-lock', title: 'Roles & Permissions', url: { name: 'apps-roles' } },
-      { icon: 'tabler-settings', title: 'Account Settings', url: { name: 'pages-account-settings-tab', params: { tab: 'account' } } },
-      { icon: 'tabler-copy', title: 'Dialog Examples', url: { name: 'pages-dialog-examples' } },
+      { icon: 'tabler-calendar', title: 'Calendar', url: { name: 'admin-apps-calendar' } },
+      { icon: 'tabler-lock', title: 'Roles & Permissions', url: { name: 'admin-apps-roles' } },
+      { icon: 'tabler-settings', title: 'Account Settings', url: { name: 'admin-pages-account-settings-tab', params: { tab: 'account' } } },
+      { icon: 'tabler-copy', title: 'Dialog Examples', url: { name: 'admin-pages-dialog-examples' } },
     ],
   },
   {
     title: 'User Interface',
     content: [
-      { icon: 'tabler-typography', title: 'Typography', url: { name: 'pages-typography' } },
-      { icon: 'tabler-menu-2', title: 'Accordion', url: { name: 'components-expansion-panel' } },
-      { icon: 'tabler-info-triangle', title: 'Alert', url: { name: 'components-alert' } },
-      { icon: 'tabler-checkbox', title: 'Cards', url: { name: 'pages-cards-card-basic' } },
+      { icon: 'tabler-typography', title: 'Typography', url: { name: 'admin-pages-typography' } },
+      { icon: 'tabler-menu-2', title: 'Accordion', url: { name: 'admin-components-expansion-panel' } },
+      { icon: 'tabler-info-triangle', title: 'Alert', url: { name: 'admin-components-alert' } },
+      { icon: 'tabler-checkbox', title: 'Cards', url: { name: 'admin-pages-cards-card-basic' } },
     ],
   },
   {
     title: 'Forms & Tables',
     content: [
-      { icon: 'tabler-circle-dot', title: 'Radio', url: { name: 'forms-radio' } },
-      { icon: 'tabler-file-invoice', title: 'Form Layouts', url: { name: 'forms-form-layouts' } },
-      { icon: 'tabler-table', title: 'Table', url: { name: 'tables-data-table' } },
-      { icon: 'tabler-edit', title: 'Editor', url: { name: 'forms-editors' } },
+      { icon: 'tabler-circle-dot', title: 'Radio', url: { name: 'admin-forms-radio' } },
+      { icon: 'tabler-file-invoice', title: 'Form Layouts', url: { name: 'admin-forms-form-layouts' } },
+      { icon: 'tabler-table', title: 'Table', url: { name: 'admin-tables-data-table' } },
+      { icon: 'tabler-edit', title: 'Editor', url: { name: 'admin-forms-editors' } },
     ],
   },
 ]
@@ -72,17 +72,17 @@ const noDataSuggestions: Suggestion[] = [
   {
     title: 'Analytics',
     icon: 'tabler-chart-bar',
-    url: { name: 'dashboards-analytics' },
+    url: { name: 'admin-dashboards-analytics' },
   },
   {
     title: 'CRM',
     icon: 'tabler-chart-donut-3',
-    url: { name: 'dashboards-crm' },
+    url: { name: 'admin-dashboards-crm' },
   },
   {
     title: 'eCommerce',
     icon: 'tabler-shopping-cart',
-    url: { name: 'dashboards-ecommerce' },
+    url: { name: 'admin-dashboards-ecommerce' },
   },
 ]
 

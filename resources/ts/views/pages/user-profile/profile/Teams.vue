@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ProfileTeamsTech } from '@db/pages/profile/types'
+import type { ProfileTeamsTech } from '@db/pages/profile/types';
 
 interface Props {
   teamsData: ProfileTeamsTech[]
@@ -54,7 +54,7 @@ const moreList = [
 
         <VListItem>
           <VListItemTitle class="pt-2 text-center">
-            <RouterLink :to="{ name: 'pages-user-profile-tab', params: { tab: 'teams' } }">
+            <RouterLink :to="{ name: 'admin-pages-user-profile-tab', params: { tab: 'teams' } }">
               <p class="mb-0">
                 View all Teams
               </p>

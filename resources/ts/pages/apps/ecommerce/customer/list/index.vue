@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ECommerceAddCustomerDrawer from '@/views/apps/ecommerce/ECommerceAddCustomerDrawer.vue'
-import type { Customer } from '@db/apps/ecommerce/types'
+import ECommerceAddCustomerDrawer from '@/views/apps/ecommerce/ECommerceAddCustomerDrawer.vue';
+import type { Customer } from '@db/apps/ecommerce/types';
 
 const searchQuery = ref('')
 const isAddCustomerDrawerOpen = ref(false)
@@ -102,7 +102,7 @@ const totalCustomers = computed(() => customerData.value.total)
             </VAvatar>
             <div class="d-flex flex-column">
               <RouterLink
-                :to="{ name: 'apps-ecommerce-customer-details-id', params: { id: item.customerId } }"
+                :to="{ name: 'admin-apps-ecommerce-customer-details-id', params: { id: item.customerId } }"
                 class="text-link font-weight-medium d-inline-block"
                 style="line-height: 1.375rem;"
               >

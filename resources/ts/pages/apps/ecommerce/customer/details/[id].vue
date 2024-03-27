@@ -7,7 +7,7 @@ import CustomerTabOverview from '@/views/apps/ecommerce/customer/view/CustomerTa
 import CustomerTabSecurity from '@/views/apps/ecommerce/customer/view/CustomerTabSecurity.vue'
 import type { Customer } from '@db/apps/ecommerce/types'
 
-const route = useRoute('apps-ecommerce-customer-details-id')
+const route = useRoute('admin-apps-ecommerce-customer-details-id')
 const customerData = ref<Customer>()
 const userTab = ref(null)
 

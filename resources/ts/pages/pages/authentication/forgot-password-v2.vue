@@ -110,7 +110,7 @@ const authThemeMask = useGenerateImageVariant(authV2MaskLight, authV2MaskDark)
               <VCol cols="12">
                 <RouterLink
                   class="d-flex align-center justify-center"
-                  :to="{ name: 'pages-authentication-login-v2' }"
+                  :to="{ name: 'admin-pages-authentication-login-v2' }"
                 >
                   <VIcon
                     icon="tabler-chevron-left"

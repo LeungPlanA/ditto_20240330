@@ -100,7 +100,7 @@ const resolveChipColor = (tags: string) => {
                   <VImg
                     :src="course.tutorImg"
                     class="cursor-pointer"
-                    @click="() => $router.push({ name: 'apps-academy-course-details' })"
+                    @click="() => $router.push({ name: 'admin-apps-academy-course-details' })"
                   />
                 </div>
                 <VCardText>
@@ -129,7 +129,7 @@ const resolveChipColor = (tags: string) => {
                   </div>
                   <h5 class="text-h5 mb-1">
                     <RouterLink
-                      :to="{ name: 'apps-academy-course-details' }"
+                      :to="{ name: 'admin-apps-academy-course-details' }"
                       class="course-title"
                     >
                       {{ course.courseTitle }}
@@ -173,7 +173,7 @@ const resolveChipColor = (tags: string) => {
                       variant="tonal"
                       color="secondary"
                       class="flex-grow-1"
-                      :to="{ name: 'apps-academy-course-details' }"
+                      :to="{ name: 'admin-apps-academy-course-details' }"
                     >
                       <template #prepend>
                         <VIcon
@@ -187,7 +187,7 @@ const resolveChipColor = (tags: string) => {
                       v-if="course.completedTasks !== course.totalTasks"
                       variant="tonal"
                       class="flex-grow-1"
-                      :to="{ name: 'apps-academy-course-details' }"
+                      :to="{ name: 'admin-apps-academy-course-details' }"
                     >
                       <template #append>
                         <VIcon

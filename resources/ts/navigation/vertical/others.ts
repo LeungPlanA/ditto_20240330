@@ -3,7 +3,7 @@ export default [
   {
     title: 'Access Control',
     icon: { icon: 'tabler-command' },
-    to: 'access-control',
+    to: 'admin-access-control',
     action: 'read',
     subject: 'AclDemo',
   },

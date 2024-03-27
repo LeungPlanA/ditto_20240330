@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Order } from '@db/apps/ecommerce/types'
+import type { Order } from '@db/apps/ecommerce/types';
 
 const searchQuery = ref('')
 
@@ -86,7 +86,7 @@ const deleteOrder = async (id: number) => {
     >
       <!-- Order ID -->
       <template #item.order="{ item }">
-        <RouterLink :to="{ name: 'apps-ecommerce-order-details-id', params: { id: item.order } }">
+        <RouterLink :to="{ name: 'admin-apps-ecommerce-order-details-id', params: { id: item.order } }">
           #{{ item.order }}
         </RouterLink>
       </template>
@@ -120,7 +120,7 @@ const deleteOrder = async (id: number) => {
             <VList>
               <VListItem
                 value="view"
-                :to="{ name: 'apps-ecommerce-order-details-id', params: { id: item.order } }"
+                :to="{ name: 'admin-apps-ecommerce-order-details-id', params: { id: item.order } }"
               >
                 View
               </VListItem>

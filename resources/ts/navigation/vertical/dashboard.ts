@@ -5,23 +5,23 @@ export default [
     children: [
       {
         title: 'Analytics',
-        to: 'dashboards-analytics',
+        to: 'admin-dashboards-analytics',
       },
       {
         title: 'CRM',
-        to: 'dashboards-crm',
+        to: 'admin-dashboards-crm',
       },
       {
         title: 'Ecommerce',
-        to: 'dashboards-ecommerce',
+        to: 'admin-dashboards-ecommerce',
       },
       {
         title: 'Academy',
-        to: 'dashboards-academy',
+        to: 'admin-apps-academy-dashboard',
       },
       {
         title: 'Logistics',
-        to: 'dashboards-logistics',
+        to: 'admin-apps-logistics-dashboard',
       },
     ],
     badgeContent: '5',
@@ -33,27 +33,27 @@ export default [
     children: [
       {
         title: 'Landing',
-        to: 'front-pages-landing-page',
+        to: 'admin-front-pages-landing-page',
         target: '_blank',
       },
       {
         title: 'Pricing',
-        to: 'front-pages-pricing',
+        to: 'admin-front-pages-pricing',
         target: '_blank',
       },
       {
         title: 'Payment',
-        to: 'front-pages-payment',
+        to: 'admin-front-pages-payment',
         target: '_blank',
       },
       {
         title: 'Checkout',
-        to: 'front-pages-checkout',
+        to: 'admin-front-pages-checkout',
         target: '_blank',
       },
       {
         title: 'Help Center',
-        to: 'front-pages-help-center',
+        to: 'admin-front-pages-help-center',
         target: '_blank',
       },
     ],

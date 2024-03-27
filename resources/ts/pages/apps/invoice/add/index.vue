@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import InvoiceEditable from '@/views/apps/invoice/InvoiceEditable.vue'
-import InvoiceSendInvoiceDrawer from '@/views/apps/invoice/InvoiceSendInvoiceDrawer.vue'
+import InvoiceEditable from '@/views/apps/invoice/InvoiceEditable.vue';
+import InvoiceSendInvoiceDrawer from '@/views/apps/invoice/InvoiceSendInvoiceDrawer.vue';
 
 // Type: Invoice data
-import type { InvoiceData, PurchasedProduct } from '@/views/apps/invoice/types'
+import type { InvoiceData, PurchasedProduct } from '@/views/apps/invoice/types';
 
 // 👉 Default Blank Data
 const invoiceData = ref<InvoiceData>({
@@ -99,7 +99,7 @@ const removeProduct = (id: number) => {
             color="secondary"
             variant="tonal"
             class="mb-4"
-            :to="{ name: 'apps-invoice-preview-id', params: { id: '5036' } }"
+            :to="{ name: 'admin-apps-invoice-preview-id', params: { id: '5036' } }"
           >
             Preview
           </VBtn>

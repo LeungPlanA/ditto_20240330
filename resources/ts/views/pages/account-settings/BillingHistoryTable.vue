@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Invoice } from '@db/apps/invoice/types'
+import type { Invoice } from '@db/apps/invoice/types';
 
 const searchQuery = ref('')
 const selectedStatus = ref()
@@ -98,7 +98,7 @@ const deleteInvoice = async (id: number) => {
 
       <VBtn
         prepend-icon="tabler-plus"
-        :to="{ name: 'apps-invoice-add' }"
+        :to="{ name: 'admin-apps-invoice-add' }"
       >
         Create invoice
       </VBtn>
@@ -143,7 +143,7 @@ const deleteInvoice = async (id: number) => {
       <!-- id -->
       <template #item.id="{ item }">
         <div class="text-body-1">
-          <RouterLink :to="{ name: 'apps-invoice-preview-id', params: { id: item.id } }">
+          <RouterLink :to="{ name: 'admin-apps-invoice-preview-id', params: { id: item.id } }">
             #{{ item.id }}
           </RouterLink>
         </div>
@@ -195,7 +195,7 @@ const deleteInvoice = async (id: number) => {
           <div class="d-flex flex-column">
             <RouterLink
               class="font-weight-medium text-body-1 text-high-emphasis mb-0 text-link"
-              :to="{ name: 'pages-user-profile-tab', params: { tab: 'profile' } }"
+              :to="{ name: 'admin-pages-user-profile-tab', params: { tab: 'profile' } }"
             >
               {{ item.client.name }}
             </RouterLink>
@@ -241,7 +241,7 @@ const deleteInvoice = async (id: number) => {
           />
         </IconBtn>
 
-        <IconBtn :to="{ name: 'apps-invoice-preview-id', params: { id: item.id } }">
+        <IconBtn :to="{ name: 'admin-apps-invoice-preview-id', params: { id: item.id } }">
           <VIcon
             icon="tabler-eye"
             size="20"
