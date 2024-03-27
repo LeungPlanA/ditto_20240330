@@ -200,7 +200,7 @@ export const db: DB = {
         {
           url: { name: 'pages-user-profile-tab', params: { tab: 'profile' } },
           icon: 'tabler-user-circle',
-          title: 'User Profile - Profile',
+          title: 'User Profilesss - Profile',
         },
         {
           url: { name: 'pages-account-settings-tab', params: { tab: 'account' } },
