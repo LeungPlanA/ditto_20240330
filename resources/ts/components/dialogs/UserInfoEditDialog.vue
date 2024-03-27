@@ -195,7 +195,7 @@ const dialogModelValueUpdate = (val: boolean) => {
                 multiple
                 label="Language"
                 placeholder="English"
-                :items="['English', 'Spanish', 'French']"
+                :items="['English', 'Spanish', 'French', 'Chinese-zh']"
               />
             </VCol>
 

@@ -1,7 +1,7 @@
-import { breakpointsVuetify } from '@vueuse/core'
-import { VIcon } from 'vuetify/components/VIcon'
 import { defineThemeConfig } from '@core'
 import { Skins } from '@core/enums'
+import { breakpointsVuetify } from '@vueuse/core'
+import { VIcon } from 'vuetify/components/VIcon'
 
 // ❗ Logo SVG must be imported with ?raw suffix
 import logo from '@images/logo.svg?raw'
@@ -33,6 +33,11 @@ export const { themeConfig, layoutConfig } = defineThemeConfig({
           label: 'Arabic',
           i18nLang: 'ar',
           isRTL: true,
+        },
+        {
+          label: '中文',
+          i18nLang: 'zh',
+          isRTL: false,
         },
       ],
     },
