@@ -1,0 +1,21 @@
+@import 'swiper/css/bundle';
+
+.template_bannerSlider-1 .swiper-wrapper{
+    height:auto;
+}
+.template_bannerSlider-1 .swiper-slide > div{
+    padding-left:5vw;
+}
+@media screen and (min-width:1024px){
+    .template_bannerSlider-1 .swiper-slide > div{
+        padding-left:calc((100vw - var(--containerMaxWidth)) / 2)
+    }
+}
+.template_bannerSlider-1 .swiper-button-prev{
+    color:#fff;
+    left:30px;
+}
+.template_bannerSlider-1 .swiper-button-next{
+    color:#fff;
+    right:30px;
+}

@@ -46,6 +46,7 @@ class PageController extends Controller
     public function getPageByUrl($url)
     {
         $page = $this->getPageDetail($url);
-        return view('application', ['page' => $page]);
+        return view('frontend/page', ['page' => $page]);
+        //return view('application', ['page' => $page]);
     }
 }

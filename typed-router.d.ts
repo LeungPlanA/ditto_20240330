@@ -8,28 +8,33 @@
 /// <reference types="unplugin-vue-router/client" />
 
 import type {
-  NavigationGuard,
-  ParamValue,
-  RouteLocationAsPathTypedList,
-  RouteLocationAsRelativeTypedList,
-  RouteLocationAsString,
-  RouteLocationNormalizedLoadedTypedList,
-  RouteLocationNormalizedTypedList,
-  RouteLocationResolvedTypedList,
   // type safe route locations
   RouteLocationTypedList,
+  RouteLocationResolvedTypedList,
+  RouteLocationNormalizedTypedList,
+  RouteLocationNormalizedLoadedTypedList,
+  RouteLocationAsString,
+  RouteLocationAsRelativeTypedList,
+  RouteLocationAsPathTypedList,
+
   // helper types
   // route definitions
   RouteRecordInfo,
-  RouterLinkPropsTyped,
+  ParamValue,
+  ParamValueOneOrMore,
+  ParamValueZeroOrMore,
+  ParamValueZeroOrOne,
+
+  // vue-router extensions
+  _RouterTyped,
   RouterLinkTyped,
+  RouterLinkPropsTyped,
+  NavigationGuard,
   UseLinkFnTyped,
 
   // data fetching
   _DataLoader,
   _DefineLoaderOptions,
-  // vue-router extensions
-  _RouterTyped
 } from 'unplugin-vue-router/types'
 
 declare module 'vue-router/auto/routes' {
@@ -148,8 +153,8 @@ declare module 'vue-router/auto/routes' {
     'admin-wizard-examples-checkout': RouteRecordInfo<'admin-wizard-examples-checkout', '/admin/wizard-examples/checkout', Record<never, never>, Record<never, never>>,
     'admin-wizard-examples-create-deal': RouteRecordInfo<'admin-wizard-examples-create-deal', '/admin/wizard-examples/create-deal', Record<never, never>, Record<never, never>>,
     'admin-wizard-examples-property-listing': RouteRecordInfo<'admin-wizard-examples-property-listing', '/admin/wizard-examples/property-listing', Record<never, never>, Record<never, never>>,
-    'admin-apps-email-filter': RouteRecordInfo<'admin-apps-email-filter', '/apps/email/:filter', { filter: ParamValue<true> }, { filter: ParamValue<false> }>,
-    'admin-apps-email-label': RouteRecordInfo<'admin-apps-email-label', '/apps/email/:label', { label: ParamValue<true> }, { label: ParamValue<false> }>,
+    'apps-email-filter': RouteRecordInfo<'apps-email-filter', '/apps/email/:filter', { filter: ParamValue<true> }, { filter: ParamValue<false> }>,
+    'apps-email-label': RouteRecordInfo<'apps-email-label', '/apps/email/:label', { label: ParamValue<true> }, { label: ParamValue<false> }>,
   }
 }
 
@@ -229,8 +234,10 @@ declare module 'vue-router/auto' {
   ): _DataLoader<Awaited<P>, isLazy>
 
   export {
-    _HasDataLoaderMeta as HasDataLoaderMeta, _definePage as definePage, _setupDataFetchingGuard as setupDataFetchingGuard,
-    _stopDataFetchingScope as stopDataFetchingScope
+    _definePage as definePage,
+    _HasDataLoaderMeta as HasDataLoaderMeta,
+    _setupDataFetchingGuard as setupDataFetchingGuard,
+    _stopDataFetchingScope as stopDataFetchingScope,
   } from 'unplugin-vue-router/runtime'
 }
 

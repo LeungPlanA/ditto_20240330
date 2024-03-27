@@ -1,0 +1,9 @@
+:root{
+    --topHeaderHeight:75px;
+}
+main{
+    padding-top:calc(var(--topHeaderHeight,0px) + var(--topPromoteHeight,0px));
+}
+header{
+    filter: drop-shadow(0px 4px 5px rgba(94,98,120,.2));
+}
